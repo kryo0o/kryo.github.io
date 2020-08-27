@@ -82,7 +82,6 @@ kramdown:
   input: GFM
 syntax_highlighter_opts:
     wrap:              div 
-    line_number_start: 1
     tab_width:         2
     bold_every:        5
     css:               style
