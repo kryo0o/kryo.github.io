@@ -80,4 +80,10 @@ kramdown:
   smart_quotes:   lsquo,rsquo,ldquo,rdquo
   syntax_highlighter: true
   input: GFM
-
+syntax_highlighter_opts:
+    wrap:              div
+    line_numbers:      
+    line_number_start: 1
+    tab_width:         4
+    bold_every:        10
+    css:               style
