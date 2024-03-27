@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Scaleway stardust星尘IPv6 VPS 购买教程
-date: 2022-12-7
+date: 2024-3-27
 categories: blog
 tags: [loc]
 description: Scaleway stardust星尘IPv6 VPS 购买教程。
-author: 'musk'
+author: 'kryo'
 ---
 官方教程：`https://www.scaleway.com/en/docs/compute/instances/api-cli/creating-managing-instances-with-cliv2`
 
