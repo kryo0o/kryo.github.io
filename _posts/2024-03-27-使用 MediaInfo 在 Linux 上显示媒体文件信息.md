@@ -7,9 +7,8 @@ tags: [pt]
 description: Scaleway stardust星尘IPv6 VPS 购买教程。
 author: 'kryo'
 ---
-官方教程：`https://www.scaleway.com/en/docs/compute/instances/api-cli/creating-managing-instances-with-cliv2`
 
-`debian`安装 `apt install mediainfo mediainfo-gui`
+`Debian`安装 `apt install mediainfo mediainfo-gui`
 
 使用示例`mediainfo <path_to_media_file>`
 
