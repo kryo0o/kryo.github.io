@@ -7,11 +7,12 @@ tags: [loc]
 description: Scaleway stardust星尘IPv6 VPS 购买教程。
 author: 'musk'
 ---
-官方教程：https://www.scaleway.com/en/docs/compute/instances/api-cli/creating-managing-instances-with-cliv2
+官方教程：`https://www.scaleway.com/en/docs/compute/instances/api-cli/creating-managing-instances-with-cliv2`
 
 建议在网页后台直接添加个SSH KEY，避免后续无法登陆。
 
-首先获取官方文件，此处环境是在Debian 10 X86系统下创建，其他系统和架构可再官方Github处获取。 https://github.com/scaleway/scaleway-cli/releases
+首先获取官方文件，此处环境是在Debian 10 X86系统下创建，其他系统和架构可再官方Github处获取。
+` https://github.com/scaleway/scaleway-cli/releases`
 
     curl -o /usr/local/bin/scw -L "https://github.com/scaleway/scaleway-cli/releases/download/v2.16.1/scaleway-cli_2.16.1_linux_amd64"
     
