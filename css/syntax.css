@@ -1,59 +1,77 @@
-/* 通用设置 */
-.highlight {
-  background-color: #f8f8f8;
+.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #303030;
 }
-
-/* 表格内间距 */
-.highlight table td { 
-  padding: 1px; 
+.highlight .err {
+  color: #151515;
+  background-color: #ac4142;
 }
-.highlight table pre { 
-  margin: 0; 
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
+  color: #505050;
 }
-
-/* 关键字 */
-.highlight .k, .highlight .kv, .highlight .kc, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt {
-  color: #000000;
+.highlight .cp {
+  color: #f4bf75;
+}
+.highlight .nt {
+  color: #f4bf75;
+}
+.highlight .o, .highlight .ow {
+  color: #d0d0d0;
+}
+.highlight .p, .highlight .pi {
+  color: #d0d0d0;
+}
+.highlight .gi {
+  color: #90a959;
+}
+.highlight .gd {
+  color: #ac4142;
+}
+.highlight .gh {
+  color: #6a9fb5;
+  background-color: #151515;
   font-weight: bold;
 }
-
-/* 数字与方法 */
-.highlight .mf, .highlight .mh, .highlight .il, .highlight .mi, .highlight .mo {
-  color: #009999;
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #aa759f;
 }
-
-/* 字符串与注释 */
-.highlight .s, .highlight .sa, .highlight .dl, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .s1, .highlight .ss {
-  color: #d14;
+.highlight .kc {
+  color: #d28445;
 }
-
-/* 其他类型 */
-.highlight .err { /* 错误 */
-  color: #a61717;
-  background-color: #e3d2d2;
+.highlight .kt {
+  color: #d28445;
 }
-.highlight .gd { /* 编译错误 */
-  color: #000000;
-  background-color: #ffdddd;
+.highlight .kd {
+  color: #d28445;
 }
-.highlight .gi { /* 编译正确 */
-  color: #000000;
-  background-color: #ddffdd;
+.highlight .s, .highlight .sa, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #90a959;
 }
-/* ... 其它更多详细类型 ... */
-
-/* 特殊类型 */
-.highlight .na { /* 名称空间或类型名 */
-  color: #008080;
+.highlight .sr {
+  color: #75b5aa;
 }
-.highlight .bp { /* 布尔值或其他预定义类型 */
-  color: #999999;
+.highlight .si {
+  color: #8f5536;
 }
-.highlight .nb { /* 布尔或数字常量 */
-  color: #0086B3;
+.highlight .se {
+  color: #8f5536;
 }
-.highlight .nc { /* 类名 */
-  color: #445588;
-  font-weight: bold;
+.highlight .nn {
+  color: #f4bf75;
 }
-/* ... 其它更多特殊类型 ... */
+.highlight .nc {
+  color: #f4bf75;
+}
+.highlight .no {
+  color: #f4bf75;
+}
+.highlight .na {
+  color: #6a9fb5;
+}
+.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
+  color: #90a959;
+}
+.highlight .ss {
+  color: #90a959;
+}
