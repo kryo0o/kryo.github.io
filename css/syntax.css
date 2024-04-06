@@ -1,208 +1,59 @@
-.highlight table td { padding: 5px; }
-.highlight table pre { margin: 0; }
-.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
-  color: #5e5d83;
-  font-style: italic;
-}
-.highlight .cm {
-  color: #5e5d83;
-  font-style: italic;
-}
-.highlight .c1 {
-  color: #5e5d83;
-  font-style: italic;
-}
-.highlight .cp {
-  color: #465457;
-  font-weight: bold;
-}
-.highlight .cs {
-  color: #465457;
-  font-weight: bold;
-  font-style: italic;
-}
-.highlight .err {
-  color: #f8f8f2;
-  background-color: #403d3d;
-}
-.highlight .gi {
-  color: #a6e22e;
-}
-.highlight .gd {
-  color: #f92672;
-}
-.highlight .ge {
-  color: #1b1d1e;
-  font-style: italic;
-}
-.highlight .gr {
-  color: #f92672;
-}
-.highlight .gt {
-  color: #f92672;
-}
-.highlight .gh {
-  color: #403d3d;
-}
-.highlight .go {
-  color: #403d3d;
-}
-.highlight .gp {
-  color: #66d9ef;
-}
-.highlight .gs {
-  font-weight: bold;
-}
-.highlight .gu {
-  color: #465457;
-}
-.highlight .k, .highlight .kv {
-  color: #66d9ef;
-  font-weight: bold;
-}
-.highlight .kc {
-  color: #66d9ef;
-  font-weight: bold;
-}
-.highlight .kd {
-  color: #66d9ef;
-  font-weight: bold;
-}
-.highlight .kp {
-  color: #66d9ef;
-  font-weight: bold;
-}
-.highlight .kr {
-  color: #66d9ef;
-  font-weight: bold;
-}
-.highlight .kt {
-  color: #66d9ef;
-  font-weight: bold;
-}
-.highlight .kn {
-  color: #f92672;
-  font-weight: bold;
-}
-.highlight .ow {
-  color: #f92672;
-  font-weight: bold;
-}
-.highlight .o {
-  color: #f92672;
-  font-weight: bold;
-}
-.highlight .mf {
-  color: #af87ff;
-}
-.highlight .mh {
-  color: #af87ff;
-}
-.highlight .il {
-  color: #af87ff;
-}
-.highlight .mi {
-  color: #af87ff;
-}
-.highlight .mo {
-  color: #af87ff;
-}
-.highlight .m, .highlight .mb, .highlight .mx {
-  color: #af87ff;
-}
-.highlight .se {
-  color: #af87ff;
-}
-.highlight .sb {
-  color: #d7d787;
-}
-.highlight .sc {
-  color: #d7d787;
-}
-.highlight .sd {
-  color: #d7d787;
-}
-.highlight .s2 {
-  color: #d7d787;
-}
-.highlight .sh {
-  color: #d7d787;
-}
-.highlight .si {
-  color: #d7d787;
-}
-.highlight .sx {
-  color: #d7d787;
-}
-.highlight .sr {
-  color: #d7d787;
-}
-.highlight .s1 {
-  color: #d7d787;
-}
-.highlight .ss {
-  color: #d7d787;
-}
-.highlight .s, .highlight .sa, .highlight .dl {
-  color: #d7d787;
-}
-.highlight .na {
-  color: #a6e22e;
-}
-.highlight .nc {
-  color: #a6e22e;
-  font-weight: bold;
-}
-.highlight .nd {
-  color: #a6e22e;
-  font-weight: bold;
-}
-.highlight .ne {
-  color: #a6e22e;
-  font-weight: bold;
-}
-.highlight .nf, .highlight .fm {
-  color: #a6e22e;
-  font-weight: bold;
-}
-.highlight .no {
-  color: #66d9ef;
-}
-.highlight .bp {
-  color: #f8f8f2;
-}
-.highlight .nb {
-  color: #f8f8f2;
-}
-.highlight .ni {
-  color: #f8f8f2;
-}
-.highlight .nn {
-  color: #f8f8f2;
-}
-.highlight .vc {
-  color: #f8f8f2;
-}
-.highlight .vg {
-  color: #f8f8f2;
-}
-.highlight .vi {
-  color: #f8f8f2;
-}
-.highlight .nv, .highlight .vm {
-  color: #f8f8f2;
-}
-.highlight .w {
-  color: #f8f8f2;
-}
-.highlight .nl {
-  color: #f8f8f2;
-  font-weight: bold;
-}
-.highlight .nt {
-  color: #f92672;
-}
+/* 通用设置 */
 .highlight {
-  color: #f8f8f2;
-  background-color: #1b1d1e;
+  background-color: #f8f8f8;
 }
+
+/* 表格内间距 */
+.highlight table td { 
+  padding: 1px; 
+}
+.highlight table pre { 
+  margin: 0; 
+}
+
+/* 关键字 */
+.highlight .k, .highlight .kv, .highlight .kc, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* 数字与方法 */
+.highlight .mf, .highlight .mh, .highlight .il, .highlight .mi, .highlight .mo {
+  color: #009999;
+}
+
+/* 字符串与注释 */
+.highlight .s, .highlight .sa, .highlight .dl, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .s1, .highlight .ss {
+  color: #d14;
+}
+
+/* 其他类型 */
+.highlight .err { /* 错误 */
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+.highlight .gd { /* 编译错误 */
+  color: #000000;
+  background-color: #ffdddd;
+}
+.highlight .gi { /* 编译正确 */
+  color: #000000;
+  background-color: #ddffdd;
+}
+/* ... 其它更多详细类型 ... */
+
+/* 特殊类型 */
+.highlight .na { /* 名称空间或类型名 */
+  color: #008080;
+}
+.highlight .bp { /* 布尔值或其他预定义类型 */
+  color: #999999;
+}
+.highlight .nb { /* 布尔或数字常量 */
+  color: #0086B3;
+}
+.highlight .nc { /* 类名 */
+  color: #445588;
+  font-weight: bold;
+}
+/* ... 其它更多特殊类型 ... */
