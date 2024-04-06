@@ -85,9 +85,10 @@
 
 .hljs {
 	border: 0;
-	font-family: "Consulas", "Courier New", Courier, mono, serif;
+                border-radius: 4px;
+	font-family: "Consolas", "Courier New", Courier, monospace;
 	font-size: 14px;
-	background: #ffffff !important;
+	background-color: #f8f8f8;
 	display: block;
 	padding: 0px;
 	margin: 0;
