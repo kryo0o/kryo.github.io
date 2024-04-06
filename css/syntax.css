@@ -1,117 +1,120 @@
-/* 使代码行滚动而不是换行 */  
-.highlight pre code {  
-  white-space: nowrap; /* 设置内部所有内容为 nowrap */  
-}  
-  
-.highlight pre {  
-  overflow-x: auto; /* 设置水平方向滚动 */  
-  white-space: pre; /* 强制 <pre> 保留格式 */  
-  word-wrap: normal; /* 防止自动换行 */  
-  padding: 1em; /* 添加内边距以改善可读性 */  
-  margin: 0; /* 移除外边距 */  
-  background-color: #f8f8f8; /* 设置背景颜色 */  
-  border: 1px solid #ddd; /* 添加边框 */  
-  border-radius: 3px; /* 圆角边框 */  
-}  
-  
-/* GitHub风格的语法高亮样式 */  
-.highlight {  
-  background: #ffffff; /* 代码块背景色 */  
-}  
-  
-.highlight .c { /* 注释 */  
-  color: #999988;  
-  font-style: italic;  
-}  
-.highlight .err { /* 错误 */  
-  color: #a61717;  
-  background-color: #e3d2d2;  
-}  
-.highlight .k { /* 关键字 */  
-  font-weight: bold;  
-}  
-.highlight .o { /* 操作符 */  
-  font-weight: bold;  
-}  
-.highlight .cm { /* 注释 */  
-  color: #999988;  
-  font-style: italic;  
-}  
-.highlight .cp { /* 预处理指令 */  
-  color: #999999;  
-  font-weight: bold;  
-}  
-.highlight .c1 { /* 单行注释 */  
-  color: #999988;  
-  font-style: italic;  
-}  
-.highlight .cs { /* 字符串中的特殊字符 */  
-  color: #999999;  
-  font-weight: bold;  
-  font-style: italic;  
-}  
-.highlight .gd { /* 删除的代码 */  
-  color: #000000;  
-  background-color: #ffdddd;  
-}  
-.highlight .gd .x { /* 删除的代码 */  
-  color: #000000;  
-  background-color: #ffaaaa;  
-}  
-.highlight .ge { /* 转义字符 */  
-  font-style: italic;  
-}  
-.highlight .gr { /* 引用错误 */  
-  color: #aa0000;  
-}  
-.highlight .gh { /* 标题、头信息 */  
-  color: #999999;  
-}  
-.highlight .gi { /* 插入的代码 */  
-  color: #000000;  
-  background-color: #ddffdd;  
-}  
-.highlight .gi .x { /* 插入的代码 */  
-  color: #000000;  
-  background-color: #aaffaa;  
-}  
-.highlight .go { /* 输出 */  
-  color: #888888;  
-}  
-.highlight .gp { /* 通用提示符 */  
-  color: #555555;  
-}  
-.highlight .gs { /* 强样式 */  
-  font-weight: bold;  
-}  
-.highlight .gu { /* 用户补全 */  
-  color: #800080;  
-  font-weight: bold;  
-}  
-.highlight .gt { /* 错误 */  
-  color: #aa0000;  
-}  
-.highlight .kc { /* 关键字常量 */  
-  font-weight: bold;  
-}  
-.highlight .kd { /* 关键字声明 */  
-  font-weight: bold;  
-}  
-.highlight .kn { /* 关键字命名空间 */  
-  font-weight: bold;  
-}  
-.highlight .kp { /* 关键字伪指令 */  
-  font-weight: bold;  
-}  
-.highlight .kr { /* 关键字保留字 */  
-  font-weight: bold;  
-}  
-.highlight .kt { /* 关键字类型 */  
-  color: #445588;  
-  font-weight: bold;  
-}  
-.highlight .m { /* 数字 */  
-  color: #009999;  
-}  
-.highlight .s { /* 字符串 */  
-  color: #dd11
+/* to make lines scroll instead of wrap */
+/* from http://stackoverflow.com/a/23393920 */
+
+.highlight pre code * {
+  white-space: nowrap;    // this sets all children inside to nowrap
+}
+
+.highlight pre {
+  overflow-x: auto;       // this sets the scrolling in x
+}
+
+.highlight pre code {
+  white-space: pre;       // forces <code> to respect <pre> formatting
+}
+
+
+/*
+ * GitHub style for Pygments syntax highlighter, for use with Jekyll
+ * Courtesy of GitHub.com
+ */
+
+.highlight pre, pre, .highlight .hll { background-color: #f8f8f8; border: 1px solid #ccc; padding: 6px 10px; border-radius: 3px; }
+.highlight .c { color: #999988; font-style: italic; }
+.highlight .err { color: #a61717; background-color: #e3d2d2; }
+.highlight .k { font-weight: bold; }
+.highlight .o { font-weight: bold; }
+.highlight .cm { color: #999988; font-style: italic; }
+.highlight .cp { color: #999999; font-weight: bold; }
+.highlight .c1 { color: #999988; font-style: italic; }
+.highlight .cs { color: #999999; font-weight: bold; font-style: italic; }
+.highlight .gd { color: #000000; background-color: #ffdddd; }
+.highlight .gd .x { color: #000000; background-color: #ffaaaa; }
+.highlight .ge { font-style: italic; }
+.highlight .gr { color: #aa0000; }
+.highlight .gh { color: #999999; }
+.highlight .gi { color: #000000; background-color: #ddffdd; }
+.highlight .gi .x { color: #000000; background-color: #aaffaa; }
+.highlight .go { color: #888888; }
+.highlight .gp { color: #555555; }
+.highlight .gs { font-weight: bold; }
+.highlight .gu { color: #800080; font-weight: bold; }
+.highlight .gt { color: #aa0000; }
+.highlight .kc { font-weight: bold; }
+.highlight .kd { font-weight: bold; }
+.highlight .kn { font-weight: bold; }
+.highlight .kp { font-weight: bold; }
+.highlight .kr { font-weight: bold; }
+.highlight .kt { color: #445588; font-weight: bold; }
+.highlight .m { color: #009999; }
+.highlight .s { color: #dd1144; }
+.highlight .n { color: #333333; }
+.highlight .na { color: teal; }
+.highlight .nb { color: #0086b3; }
+.highlight .nc { color: #445588; font-weight: bold; }
+.highlight .no { color: teal; }
+.highlight .ni { color: purple; }
+.highlight .ne { color: #990000; font-weight: bold; }
+.highlight .nf { color: #990000; font-weight: bold; }
+.highlight .nn { color: #555555; }
+.highlight .nt { color: navy; }
+.highlight .nv { color: teal; }
+.highlight .ow { font-weight: bold; }
+.highlight .w { color: #bbbbbb; }
+.highlight .mf { color: #009999; }
+.highlight .mh { color: #009999; }
+.highlight .mi { color: #009999; }
+.highlight .mo { color: #009999; }
+.highlight .sb { color: #dd1144; }
+.highlight .sc { color: #dd1144; }
+.highlight .sd { color: #dd1144; }
+.highlight .s2 { color: #dd1144; }
+.highlight .se { color: #dd1144; }
+.highlight .sh { color: #dd1144; }
+.highlight .si { color: #dd1144; }
+.highlight .sx { color: #dd1144; }
+.highlight .sr { color: #009926; }
+.highlight .s1 { color: #dd1144; }
+.highlight .ss { color: #990073; }
+.highlight .bp { color: #999999; }
+.highlight .vc { color: teal; }
+.highlight .vg { color: teal; }
+.highlight .vi { color: teal; }
+.highlight .il { color: #009999; }
+.highlight .gc { color: #999; background-color: #EAF2F5; }
+
+.hljs {
+	border: 0;
+                border-radius: 2px; /* 边框圆角 */ 
+	font-family: "Consulas", "Courier New", Courier, mono, serif;
+	font-size: 14px;
+	/*background: #f8f8f8 !important;*/
+	display: block;
+	padding: 1px;
+	margin: 0;
+	width: 100%;
+	font-weight: 300;
+	color: #333;
+	white-space: pre-wrap
+}
+.hljs ul {
+	list-style: decimal;
+	/*background-color: #f8f8f8;*/
+	margin: 0px 0px 0 36px !important;
+	padding: 0px;
+  right: -14px;
+}
+.hljs ul li {
+	list-style: decimal-leading-zero;
+	border-left: 1px solid #ccc !important;
+	/*background: #fff;*/
+  padding: 1px 5px 1px 10px !important;
+	margin: 0 !important;
+	/*line-height: 14px;*/
+	word-break: break-all;
+	word-wrap: break-word;
+}
+.hljs ul li:nth-of-type(even) {
+	/*background-color: #f8f8f8;*/
+	/*color: inherit;*/
+}
