@@ -89,10 +89,10 @@
 	font-size: 14px;
 	background: #ffffff !important;
 	display: block;
-	padding: 1px;
+	padding: 0px;
 	margin: 0;
 	width: 100%;
-	font-weight: 200;
+	font-weight: 300;
 	color: #333;
 	white-space: pre-wrap
 }
