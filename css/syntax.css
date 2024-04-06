@@ -1,95 +1,88 @@
 /* General styles */
 .highlight {
-  background-color: #f8f8f8;
+  background-color: #282c34; /* 更改为暗色调背景 */
+  color: #abb2bf; /* 文本基础颜色 */
 }
 
-.highlight table {
-  border-collapse: collapse; /* 添加边框合并规则，防止表格出现双重边框 */
-}
-
-.highlight table td,
-.highlight table pre {
-  padding: 5px;
-  margin: 0;
+/* Code block container */
+.highlight pre {
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace; /* 使用更为易读的等宽字体 */
+  padding: 1rem;
+  margin-bottom: 1rem;
+  overflow-x: auto; /* 添加滚动条，适应长代码 */
+  line-height: 1.6;
+  tab-size: 4; /* 设定tab缩进大小 */
 }
 
 /* Comment styles */
-.highlight .c, .highlight .cm, .highlight .cp, .highlight .c1, .highlight .cs, .highlight .c*, .highlight .ch, .highlight .cd, .highlight .cpf {
-  color: #999988;
-  font-style: italic;
+.highlight .c, .highlight .cm, .highlight .cp, .highlight .c1, .highlight .cs {
+  color: #6a737d; /* 更改为淡灰色评论 */
 }
 
 /* Error & Highlighting styles */
 .highlight .err {
-  color: #a61717;
-  background-color: #e3d2d2;
-}
-.highlight .gd, .highlight .ge {
-  color: #000000;
-}
-.highlight .gd {
-  background-color: #ffdddd;
-}
-.highlight .ge {
-  font-style: italic;
+  color: #e05252; /* 错误红色 */
+  background-color: #2f343b; /* 错误背景深色 */
 }
 
 /* Keyword styles */
 .highlight .k, .highlight .kc, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt {
-  color: #000000;
-  font-weight: bold;
+  color: #c792ea; /* 关键词紫色 */
 }
 
 /* Literal & Number styles */
 .highlight .mf, .highlight .mh, .highlight .il, .highlight .mi, .highlight .mo, .highlight .m, .highlight .mb, .highlight .mx {
-  color: #009999;
+  color: #f78c6c; /* 数字橙红 */
 }
 
 /* String styles */
-.highlight .s, .highlight .sa, .highlight .dl, .highlight .s1, .highlight .s2, .highlight .sc, .highlight .sd, .highlight .sh, .highlight .si, .highlight .sx, .highlight .s* {
-  color: #d14;
+.highlight .s, .highlight .sa, .highlight .dl, .highlight .s1, .highlight .s2, .highlight .sc, .highlight .sd, .highlight .sh, .highlight .si, .highlight .sx {
+  color: #98c379; /* 字符串绿色 */
 }
 
 /* Other specific styles */
 .highlight .na {
-  color: #008080;
+  color: #e06c75; /* 名称粉色 */
 }
 .highlight .bp {
-  color: #999999;
+  color: #d19a66; /* 布尔值浅黄 */
 }
 .highlight .nb {
-  color: #0086B3;
+  color: #d19a66; /* 布尔值浅黄 */
 }
 .highlight .nc {
-  color: #445588;
-  font-weight: bold;
+  color: #c792ea; /* 类名/类型名称保持关键词颜色 */
 }
 .highlight .no {
-  color: #008080;
+  color: #e06c75; /* 常量粉色 */
 }
 .highlight .nd {
-  color: #3c5d5d;
-  font-weight: bold;
+  color: #e06c75; /* 命名空间/类型别名粉色 */
 }
 .highlight .ni {
-  color: #800080;
+  color: #d19a66; /* 导入浅黄 */
 }
-.highlight .ne, .highlight .nf, .highlight .fm, .highlight .nl {
-  color: #990000;
-  font-weight: bold;
+.highlight .ne, .highlight .nf, .highlight .fm {
+  color: #61afef; /* 函数蓝色 */
 }
 .highlight .nt {
-  color: #000080;
+  color: #c678dd; /* 类型构造函数紫色 */
 }
 .highlight .vc, .highlight .vg, .highlight .vi, .highlight .nv, .highlight .vm {
-  color: #008080;
+  color: #d19a66; /* 变量浅黄 */
 }
 .highlight .ow {
-  color: #000000;
-  font-weight: bold;
+  color: #c792ea; /* 操作符紫色 */
 }
 
-/* Special case for line highlighting */
+/* Line highlighting */
 .highlight .sr {
-  color: #009926;
+  color: #e5c07b; /* 行高亮黄色 */
+  background-color: rgba(229, 192, 123, 0.2); /* 透明度为20%的淡黄色背景 */
+}
+
+/* Other tags that may need custom styling */
+.highlight .gd {
+  color: #f44747; /* 编译错误红色 */
+  background-color: rgba(244, 71, 71, 0.1); /* 透明度为10%的红色背景 */
 }
