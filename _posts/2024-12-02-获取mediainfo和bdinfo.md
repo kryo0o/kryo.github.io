@@ -4,7 +4,7 @@ title: 获取mediainfo和bdinfo
 date: 2024-12-02
 categories: blog
 tags: [pt]
-description: Scaleway stardust星尘IPv6 VPS 购买教程。
+description: 获取mediainfo和bdinfo。
 author: 'kryo'
 ---
 
