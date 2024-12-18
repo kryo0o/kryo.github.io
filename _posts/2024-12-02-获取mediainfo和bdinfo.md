@@ -17,6 +17,7 @@ author: 'kryo'
 bdinfo 
 
 两种方法
+
 1、`https://github.com/zoffline/BDInfoCLI-ng`的方法，推荐直接docker运行获取，bdinfo获取在原盘目录下
 
 `docker run --rm -it -v <BD_PATH>:/mnt/bd zoffline/bdinfocli-ng /mnt/bd`
